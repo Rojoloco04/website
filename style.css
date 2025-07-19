@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
     font-style: normal;
 }
 
@@ -17,7 +16,7 @@ nav {
     right: 0;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 1000; /* top layer */
     padding: 1rem 0;
 }
 
@@ -44,8 +43,7 @@ nav {
 }
 
 body {
-    margin: 0;
-    padding-top: 80px; /* Space for fixed nav */
+    margin: 80px 0 0 0; /* Space for fixed nav */
 }
 
 section {
