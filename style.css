@@ -1,4 +1,22 @@
 * {
     box-sizing: border-box;
-    font-family: "inter";
+    font-family: 'Inter', sans-serif;
+}
+
+.navList {
+    padding: 0;
+}
+
+.navList li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navList a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navList a:hover {
+    text-decoration: underline;
 }
