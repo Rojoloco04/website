@@ -1,3 +1,9 @@
+/* colors:
+#7AB8CC	Accent color, buttons, links
+#2C3A3F	Text, icons, navigation
+#F6F1E8	Main background, content areas
+*/
+
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -9,14 +15,20 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 80px 0 0 0;
+    background-color: #F6F1E8; /* Main background */
+    color: #2C3A3F; /* Text color */
+}
+
 nav { 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* top layer */
+    background-color: #F6F1E8;
+    box-shadow: 0 2px 5px rgba(44, 58, 63, 0.1);
+    z-index: 1000;
     padding: 1rem 0;
 }
 
@@ -31,21 +43,37 @@ nav {
 
 .navList li a {
     text-decoration: none;
-    color: #333;
+    color: #2C3A3F; /* Navigation text */
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navList li a:hover {
-    background-color: #f0f0f0;
-}
-
-body {
-    margin: 80px; /* Space for fixed nav */
+    background-color: #7AB8CC; /* Accent color on hover */
+    color: #F6F1E8; /* Light text on accent background */
 }
 
 section {
     scroll-margin-top: 80px;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    color: #2C3A3F;
+}
+
+#contact a {
+    color: #7AB8CC;
+    font-weight: 500;
+}
+
+.educationItem, .experienceItem, .projectItem {
+    background-color: rgba(122, 184, 204, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #7AB8CC;
 }
