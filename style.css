@@ -69,7 +69,7 @@ h1, h2, h3 {
 }
 
 .educationItem, .experienceItem, .projectItem {
-    background-color: var (--light-bg);
+    background-color: var(--light-bg);
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -80,4 +80,9 @@ footer {
     padding: 2rem 0;
     background-color: var(--light-bg);
     box-shadow: 0 -2px 5px var(--shadow);
+}
+
+footer p {
+    color: var(--text);
+    margin: 0;
 }
