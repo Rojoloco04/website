@@ -26,16 +26,15 @@ nav {
     gap: 2rem;
 }
 
-.navList li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navList a {
+.navList li a {
     text-decoration: none;
     color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.navList a:hover {
-    text-decoration: underline;
+.navList li a:hover {
+    background-color: #f0f0f0;
 }
