@@ -1,8 +1,11 @@
-/* colors:
-#7AB8CC	Accent color, buttons, links
-#2C3A3F	Text, icons, navigation
-#F6F1E8	Main background, content areas
-*/
+
+:root {
+    --accent: #7AB8CC;
+    --text: #2C3A3F;
+    --bg: #F6F1E8;
+    --light-bg: #7ab8cc1a;
+    --shadow: #2c3a3f1a;
+}
 
 * {
     box-sizing: border-box;
@@ -17,8 +20,8 @@ html {
 
 body {
     margin: 80px 0 0 0;
-    background-color: #F6F1E8; /* Main background */
-    color: #2C3A3F; /* Text color */
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 nav { 
@@ -26,8 +29,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #F6F1E8;
-    box-shadow: 0 2px 5px rgba(44, 58, 63, 0.1);
+    background-color: var(--bg);
+    box-shadow: 0 2px 5px var(--shadow);
     z-index: 1000;
     padding: 1rem 0;
 }
@@ -43,7 +46,7 @@ nav {
 
 .navList li a {
     text-decoration: none;
-    color: #2C3A3F; /* Navigation text */
+    color: var(--text);
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -51,8 +54,8 @@ nav {
 }
 
 .navList li a:hover {
-    background-color: #7AB8CC; /* Accent color on hover */
-    color: #F6F1E8; /* Light text on accent background */
+    background-color: var(--accent);
+    color: var(--bg);
 }
 
 section {
@@ -62,13 +65,19 @@ section {
 }
 
 h1, h2, h3 {
-    color: #2C3A3F;
+    color: var(--text);
 }
 
 .educationItem, .experienceItem, .projectItem {
-    background-color: rgba(122, 184, 204, 0.1);
+    background-color: var (--light-bg);
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    border-left: 4px solid #7AB8CC;
+    border-left: 4px solid var(--accent);
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: var(--light-bg);
+    box-shadow: 0 -2px 5px var(--shadow);
 }
