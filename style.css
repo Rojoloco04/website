@@ -1,22 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-}
-
-.navList {
-    padding: 0;
-}
-
-.navList li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navList a {
-    text-decoration: none;
-    color: #333;
-}
-
-.navList a:hover {
-    text-decoration: underline;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
