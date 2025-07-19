@@ -43,7 +43,7 @@ nav {
 }
 
 body {
-    margin: 80px 0 0 0; /* Space for fixed nav */
+    margin: 80px; /* Space for fixed nav */
 }
 
 section {
