@@ -5,3 +5,37 @@
     font-weight: 300;
     font-style: normal;
 }
+
+nav { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.navList li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navList a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navList a:hover {
+    text-decoration: underline;
+}
