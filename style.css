@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav { 
     position: fixed;
     top: 0;
@@ -37,4 +41,13 @@ nav {
 
 .navList li a:hover {
     background-color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px; /* Space for fixed nav */
+}
+
+section {
+    scroll-margin-top: 80px;
 }
